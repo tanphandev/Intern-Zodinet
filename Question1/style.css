@@ -1,0 +1,49 @@
+.App {
+}
+
+.post-list {
+	background-color: rgb(237, 208, 172);
+}
+
+.post-name {
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration-line: underline;
+}
+
+.post-title {
+	font-size: 22px;
+	color: rgb(122, 114, 41);
+}
+
+.post-body{
+	font-size: 16px;
+	font-style: italic;
+}
+
+.actions {
+}
+
+.ID {
+	display: block;
+}
+
+.title {
+	display: block;
+	font-size: 16px;
+}
+
+.body {
+	display: block;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.fetch-data {
+	margin-left: 32px;
+    margin-right: 20px;
+}
+
+.create-post {
+
+}
