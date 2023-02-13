@@ -7,15 +7,15 @@ export class PostService {
   private filePath = './src/posts/database/db.json';
   private posts = JSON.parse(readFileSync(this.filePath, 'utf-8'));
 
-  findCoustomerbyId(id: number) {
+  findPostById(id: number) {
     return this.posts.find((user) => user.id === id);
   }
 
-  getCustomers() {
+  getPosts() {
     return this.posts;
   }
 
-  createCustomer(postDto: CreatePostDto) {
+  createPost(postDto: CreatePostDto) {
     this.posts.push(postDto);
     writeFileSync(this.filePath, JSON.stringify(this.posts));
   }

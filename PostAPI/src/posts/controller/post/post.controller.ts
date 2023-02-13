@@ -7,16 +7,16 @@ import { PostService } from 'src/posts/service/post/post.service';
 export class PostController {
   constructor(private postService: PostService) {}
   @Get('')
-  getAllCustomer() {
-    return this.postService.getCustomers();
+  getAllPost() {
+    return this.postService.getPosts();
   }
 
   @Post('')
-  createCustomer(@Body() createPostDto: CreatePostDto, @Response() res: Res) {
+  createPosts(@Body() createPostDto: CreatePostDto, @Response() res: Res) {
     res.set({
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
     });
-    this.postService.createCustomer(createPostDto);
+    this.postService.createPost(createPostDto);
   }
 }
